@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast-Food-Fast | Home</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/styles/main.css" />
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">My Order History
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">All Orders</a>
+                <a href="#">Pending Orders</a>
+                <a href="#">Delivered Orders</a>
+            </div>
+        </div>
+            
+        <a href="#about">About Us</a>
+        <a href="#about">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+    
+    <div class="container">
+        <div class="header">
+            <h2>Welcome</h2>
+            <p>Hello Username, welcome to Fast-Food-Fast, search and order food items or simply select a food item from our menu below</p>
+            <form class="form-data">
+                <div class="form-member">
+                    <input type="text" name="search" class="form-input" placeholder="Search foods and dishes">
+                    <button name="search" class="btn btn-blue">Search</button>
+                </div>
+            </form>            
+        </div>
+
+        <div class="food-menu">
+
+            <div class="food-item card width-2">
+                <img src="img/food-items/1" class="image" />
+                <div class="item-title">Chicken Stew and Rice - &#8358; 3,500</div>
+                <div class="item-description">qwewdsc asdfefedv ewdscvev dsfedv ewdvewvsvewvfd ewfsfev fvdcvev vre</div>
+                <span class="item-description link">More Details</span>
+                <div>
+                    <button class="btn">Order Now</button>
+                    <button class="btn btn-blue">Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+    <script src="dist/scripts/responsive-nav.js"></script>
+</body>
+</html>
