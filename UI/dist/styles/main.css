@@ -202,7 +202,9 @@ a.btn {
 }
 
 table {
-    text-align: left
+    min-width: 100%;
+    text-align: left;
+    flex: 1 1 100%;
 }
 
 th {
