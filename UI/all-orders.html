@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast-Food-Fast | Home</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/styles/main.css" />
+</head>
+<body>
+
+    <nav class="topnav" id="myTopnav">
+        <a href="../index.html" class="">Home</a>
+        <a href="user-dashboard.html">Foods Dashboard</a>
+        
+        <div class="dropdown active">
+            <button class="dropbtn">My Orders 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Recent Orders</a>
+                <a href="#">Pending Orders</a>
+                <a href="#">Delivered Orders</a>
+                <a class="active" href="all-orders.html">All Orders</a>
+            </div>
+        </div>
+            
+        <a href="#about">About Us</a>
+        <a href="ui/signup.html">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav> 
+    
+    <div class="container">
+        <div class="text-center">
+            <h2>All My Orders</h2>           
+        </div>
+
+        <section class="card">
+            <table>
+                <thead>
+                    <th>Order Id</th>
+                    <th>Food Name</th>
+                    <th>Amount</th>
+                    <th>Quantity</th>
+                    <th>Date Ordered</th>
+                    <th>Delivery Status</th>
+                </thead>
+
+                <tbody>
+                    <td>#55678</td>
+                    <td>Chicken Stew and Rice</td>
+                    <td>&#8358; 3,500</td>
+                    <td>2</td>
+                    <td>11/09/2018 08:55pm</td>
+                    <td class="text-pending">Pending</td>
+                </tbody>
+                <tbody>
+                    <td>#55678</td>
+                    <td>Chicken Stew and Rice</td>
+                    <td>&#8358; 3,500</td>
+                    <td>2</td>
+                    <td>11/09/2018 08:55pm</td>
+                    <td class="text-success">Delivered</td>
+                </tbody>
+                <tbody>
+                    <td>#55678</td>
+                    <td>Chicken Stew and Rice</td>
+                    <td>&#8358; 3,500</td>
+                    <td>2</td>
+                    <td>11/09/2018 08:55pm</td>
+                    <td class="text-rejected">Rejected</td>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="food-menu">
+
+            <div class="food-item card ">
+                <img src="img/food-items/1" class="image" />
+                <div class="item-title">Chicken Stew and Rice - <span class="badge price">&#8358; 3,500</span></div>
+                <div class="item-description">qwewdsc asdfefedv ewdscvev dsfedv ewdvewv svewvfd ewfsfev fvdcvev vre</div>
+                <span class="item-description link">Food Details</span>
+                <div>
+                    <button class="btn">Order Now</button>
+                    <button class="btn btn-blue">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="food-item card ">
+                <img src="img/food-items/1" class="image" />
+                <div class="item-title">Chicken Stew and Rice - <span class="badge price">&#8358; 3,500</span></div>
+                <div class="item-description">qwewdsc asdfefedv ewdscvev dsfedv ewdvewv svewvfd ewfsfev fvdcvev vre</div>
+                <span class="item-description link">Food Details</span>
+                <div>
+                    <button class="btn">Order Now</button>
+                    <button class="btn btn-blue">Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-center"><a class="link">Load More Foods</a></div>
+
+    </div>
+    
+    
+    <script src="dist/scripts/responsive-nav.js"></script>
+</body>
+</html>
