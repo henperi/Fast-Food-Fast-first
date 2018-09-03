@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard | Create Food</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../dist/styles/main.css" />
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        
+        <div class="dropdown active">
+            <button class="dropbtn">Food Items
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Create Food</a>
+                <a href="#">All Food Items</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Orders 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Recent Orders</a>
+                <a href="#">Pending Orders</a>
+                <a href="#">Delivered Orders</a>
+                <a href="#">All Orders</a>
+            </div>
+        </div>
+            
+        <a href="#about">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+           
+    <div class="container">        
+        
+            <section class="card">
+                    <div class="text-center">
+                        <h2>All Food Items</h2>           
+                    </div>
+                    <div class="tabel">
+                        <table>
+                            <thead>
+                                <th>Food Name</th>
+                                <th>Cover</th>
+                                <th>Price</th>
+                                <th>Quantity Available</th>
+                                <th>Date Created</th>
+                                <th>Actions</th>
+                            </thead>
+            
+                            <tbody>
+                                <td>Chicken Stew and Rice</td>
+                                <td><img src="img/food-items/1"></td>
+                                <td>&#8358; 3,500</td>
+                                <td>2</td>
+                                <td>11/09/2018 08:55pm</td>
+                                <td><a class="btn btn-blue btn-sm">Edit</a><a class="btn btn-red btn-sm">Delete</a></td>
+                            </tbody>
+                            <tbody>
+                                <td>Chicken Stew and Rice</td>
+                                <td><img src="img/food-items/1"></td>
+                                <td>&#8358; 3,500</td>
+                                <td>2</td>
+                                <td>11/09/2018 08:55pm</td>
+                                <td><a class="btn btn-blue btn-sm">Edit</a><a class="btn btn-red btn-sm">Delete</a></td>
+                            </tbody>
+                            <tbody>
+                                <td>Chicken Stew and Rice</td>
+                                <td><img src="img/food-items/1"></td>
+                                <td>&#8358; 3,500</td>
+                                <td>2</td>
+                                <td>11/09/2018 08:55pm</td>
+                                <td><a class="btn btn-blue btn-sm">Edit</a><a class="btn btn-red btn-sm">Delete</a></td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center"><a class="link">Load More</a></div>
+                </section>
+        
+
+    </div>
+
+    <script src="../dist/scripts/responsive-nav.js"></script>
+
+</body>
+</html>

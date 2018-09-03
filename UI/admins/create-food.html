@@ -11,15 +11,15 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Dashboard</a>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
         
-        <div class="dropdown">
+        <div class="dropdown active">
             <button class="dropbtn">Food Items
             <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#">Create Food</a>
-                <a href="#">All Food Items</a>
+                <a href="all-food-items.html">All Food Items</a>
             </div>
         </div>
         
@@ -40,40 +40,24 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div> 
            
-    <div class="container">
-        <div class="header">
-            <h2>Welcome Admin</h2>
-            <p>Create and add new food items to your fast food menu.</p>
+    <div class="container">        
+        
+        <div class="card text-center">
+                <h2>Create New Food Items</h2>
+                <p>Welcome back to your Fast-Food-Fast Admin dashboard, easily manage food items and user's food orders </p>          
             <form class="form-data">
                 <div class="form-member">
-                    <input type="text" name="food_name" class="form-input" placeholder="Enter Food Name ">
+                    <input type="text" name="food_name" class="form-input" placeholder="Enter Food Item Name" required>
                 </div>
                 <div class="form-member">
-                    <textarea class="form-input" placeholder="Enter Food Description"></textarea>
+                    <textarea name="food_description" class="form-input" placeholder="Describe this food"></textarea>
                 </div>
                 <div class="form-member">
-                    <label>Upload a cover image for this food</label><br />
-                    <input type="file" name="food_image" placeholder="Upload a cover image for this food">
+                    <span class="">Choose a cover image for this food </span><br>
+                    <input type="file" name="image" class="form-input" placeholder="" required>
                 </div>
-                <div class="form-member">
-                    <button name="create_food" class="btn btn-blue btn-create">Create Food</button>
-                </div>
-            </form>          
-        </div>
-
-        <div class="food-menu">
-            <h3>Recently added foods</h3>
-            <div class="food-item card width-2">
-                <img src="img/food-items/1" class="image" />
-                <div class="item-title">Chicken Stew and Rice</div>
-                <div class="item-description">qwewdsc asdfefedv ewdscvev dsfedv ewdvewvsvewvfd ewfsfev fvdcvev vre</div>
-                <span class="item-description link">More Details</span>
-                <div>
-                    <button class="btn">Edit</button>
-                    <button class="btn btn-red">Delete</button>
-                </div>
-            </div>
-            
+                <button class="btn btn-blue">Create A New Food Item</button>
+            </form>
         </div>
         
 
