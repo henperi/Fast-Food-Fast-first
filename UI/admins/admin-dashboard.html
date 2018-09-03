@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../dist/styles/main.css" />
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Admin Dashboard</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Food Items
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="create-food.html">Create Food Items</a>
+                <a href="all-food-items.html">All Food Items</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Orders 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">All User Orders</a>
+                <a href="#">Pending Orders</a>
+                <a href="#">Delivered Orders</a>
+                <a href="#">Rejected Orders</a>
+            </div>
+        </div>
+
+        <a href="#about">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+           
+    <div class="container">
+        <div class="text-center">
+            <h2>Hello, Admin</h2>
+            <p>Welcome back to your Fast-Food-Fast Admin dashboard, easily manage food items and user's food orders </p>          
+        </div>
+        
+        
+        <section class="card">
+            <div class="text-center">
+                <h2>Most Recent Orders</h2>           
+            </div>
+            <div class="tabel">
+                <table>
+                    <thead>
+                        <th>Order Id</th>
+                        <th>Food Name</th>
+                        <th>Ordered By</th>
+                        <th>Amount</th>
+                        <th>Quantity</th>
+                        <th>Date Ordered</th>
+                        <th>Delivery Status</th>
+                    </thead>
+    
+                    <tbody>
+                        <td>#55678 <a class="btn btn-blue btn-sm">Order Details</a></td>
+                        <td>Chicken Stew and Rice</td>
+                        <td>Mr Johnson</td>
+                        <td>&#8358; 3,500</td>
+                        <td>2</td>
+                        <td>11/09/2018 08:55pm</td>
+                        <td class="text-pending">Pending</td>
+                    </tbody>
+                    <tbody>
+                        <td>#55678 <a class="btn btn-blue btn-sm">Order Details</a></td>
+                        <td>Chicken Stew and Rice</td>
+                        <td>Mr Johnson</td>
+                        <td>&#8358; 3,500</td>
+                        <td>2</td>
+                        <td>11/09/2018 08:55pm</td>
+                        <td class="text-success">Delivered</td>
+                    </tbody>
+                    <tbody>
+                        <td>#55678 <a class="btn btn-blue btn-sm">Order Details</a></td>
+                        <td>Chicken Stew and Rice</td>
+                        <td>Mr Johnson</td>
+                        <td>&#8358; 3,500</td>
+                        <td>2</td>
+                        <td>11/09/2018 08:55pm</td>
+                        <td class="text-rejected">Rejected</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center"><a class="link">Load More</a></div>
+        </section>
+
+        <div class="card text-center">
+            <button class="btn btn-blue">Create A New Food Item</button>
+        </div>
+    </div>
+
+    <script src="../dist/scripts/responsive-nav.js"></script>
+
+</body>
+</html>
