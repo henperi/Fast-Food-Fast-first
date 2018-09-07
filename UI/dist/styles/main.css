@@ -90,6 +90,7 @@ hr {
 
 .item-title {
     font-weight: 600;
+    margin-bottom: 4px;
 }
 .item-description {
     font-size: 13px;
@@ -201,20 +202,38 @@ a.btn {
 
 /* Cards */
 .card {
+    border-radius: 8px;
     background-color: #ffffff;
     padding: 10px;
     margin: 10px 0; 
 }
+
 
 /* food-menu */
 .food-menu {
     display: flex;
     flex-flow: row wrap
 }
+.flex {
+    display: flex;
+    flex-flow: column nowrap
+}
 
 .food-item {
     margin: 0 8px 8px 0;
     flex: 1 1 30%
+}
+
+.image-div {
+    flex: 3 1 30%
+}
+
+.image {
+    border-radius: 8px
+}
+.content-div {
+    padding-top: 8px; 
+    flex: 1 1 70%
 }
 
 .tabel {
@@ -242,10 +261,23 @@ th, td {
 
 .footer {
     bottom: 0;
-    margin: 0;
     color: #fff;
     background: rgb(69, 89, 179);
     font-size: 13px;
+    padding: 20px;
+    margin: 0 0 10px 0;
+}
+
+.cart {
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background: rgb(243, 70, 128);
+    font-size: 16px;
+    padding: 2px 8px;
+    margin: 0 0 10px 0;
+    position: fixed
 }
 
 section {
