@@ -270,14 +270,23 @@ th, td {
 
 .cart {
     border-radius: 5px;
-    top: 0;
+    bottom: 0;
     right: 0;
     color: #fff;
-    background: rgb(243, 70, 128);
+    background: rgb(69, 89, 179);
     font-size: 16px;
     padding: 2px 8px;
     margin: 0 0 10px 0;
     position: fixed
+}
+
+.count {
+    border-radius: 100%;
+    background: #fff;
+    color: rgb(69, 89, 179);
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 5px;
 }
 
 section {
